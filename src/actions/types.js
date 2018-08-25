@@ -1,0 +1,13 @@
+export const WAITING_FILMS = 'WAITING_FILMS';
+export const GOT_FILMS = 'GOT_FILMS';
+export const ERR_FILMS = 'ERR_FILMS';
+
+export const ADD_TO_SAVED = 'ADD_FILM_TO_SAVED';
+export const REMOVE_FROM_SAVED = 'REMOVE_FROM_SAVED';
+
+export const ADD_TO_WATCHED = 'ADD_FILM_TO_WATCHED';
+export const REMOVE_FROM_WATCHED = 'REMOVE_FROM_WATCHED';
+
+export const WAITING_FILM_INFO = 'WAITING_FILM_INFO';
+export const GOT_FILM_INFO = 'GOT_FILM_INFO';
+export const ERR_FILM_INFO = 'ERR_FILM_INFO';

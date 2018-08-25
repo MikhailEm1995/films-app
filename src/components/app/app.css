@@ -1,0 +1,248 @@
+html, body {
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+
+.centering {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.header {
+    & {
+        background-color: rgb(0, 188, 212);
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    &__tabs {
+        width: 80%;
+        float: right;
+    }
+
+    &__logo {
+        & {
+            display: inline-block;
+            padding: 0 50px;
+            font: bold 26px/47px 'Roboto', sans-serif;
+            color: #e1f5fe;
+        }
+
+        &-container {
+            width: 20%;
+            box-sizing: border-box;
+            overflow: hidden;
+            float: left;
+        }
+    }
+}
+
+.pagination {
+    & {
+        min-width: 10%;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    &__arrows {
+        & {
+            display: inline-block;
+        }
+    }
+
+    &__numbers {
+        display: inline-block;
+        padding: 0 10px;
+    }
+}
+
+.page {
+    & {
+        width: 100%;
+    }
+
+    &__loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 50vh;
+    }
+
+    &__error {
+        & {
+            margin-top: 50px;
+        }
+
+        &-text {
+            height: 100px;
+            padding: 20px;
+            box-sizing: border-box;
+
+            font: 600 26px 'Roboto', sans-serif;
+            background-color: #f4511e;
+            color: #fbe9e7;
+        }
+    }
+}
+
+.film {
+    & {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-bottom: 50px;
+    }
+
+    &__poster {
+        & {
+            width: 100%;
+        }
+
+        &-container {
+            width: 20%;
+            box-sizing: border-box;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+
+    &__details {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    &__row {
+        &-name {
+            font: bold 14px 'Roboto', sans-serif;
+        }
+
+        &-value {
+            font: 12px 'Roboto', sans-serif;
+        }
+    }
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+
+        width: 70px;
+        height: 70px;
+        padding: 3px;
+
+        border-radius: 4px;
+    }
+
+    &__image {
+        height: 100%;
+    }
+
+    &__title {
+        font: 500 32px/32px 'Roboto', sans-serif;
+    }
+
+    &__descr {
+        font: 300 14px/20px 'Roboto', sans-serif;
+        letter-spacing: 1px;
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: auto;
+    }
+
+    &__btn-container {
+        display: inline-block;
+        width: 20%;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 319px) and (max-width: 1169px) {
+    .header {
+        & {
+            width: 100vw;
+        }
+
+        &__tabs {
+            width: 80%;
+        }
+
+        &__logo {
+            & {
+                font-size: 20px;
+                padding: 0;
+            }
+
+            &-container {
+                width: 20%;
+                text-align: left;
+            }
+        }
+    }
+
+    .film {
+        & {
+            flex-direction: column;
+        }
+
+        &__image-container {
+            width: 40px;
+        }
+
+        &__poster {
+            &-container {
+                width: 100%;
+            }
+        }
+
+        &__info {
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        &__btns {
+            justify-content: flex-start;
+        }
+
+        &__btn {
+            &-container {
+                width: 50%;
+                margin: 0;
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .centering {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
